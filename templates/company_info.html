@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corporation Register</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .icon {
+            max-width: 1200px; /* Adjust the size of the icon as needed */
+        }
+        .headline {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .notification {
+            font-size: 10px;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <img src="static/icon.jpg" alt="Large Icon">
+    </div>
+    <div class="headline">
+        <h1>Company Register Application</h1>
+    </div>
+    <div class="notification">
+        <h4>You may apply online through google spreadsheet below OR fill out the document manually and send to kary@triangleaccounting.net</h4>
+    </div>
+    <div class="buttons">
+        <a href="https://forms.gle/QyzG4esVjU8s6hGx6" class="button">Online Application</a>
+        <a href="https://forms.gle/pc9XGtnbmv9w9j9W9" class="button">线上申请</a>
+        <a href="{{ url_for('preview_document') }}" class="button" target="_blank">Document</a>
+    </div>
+</body>
+</html>
